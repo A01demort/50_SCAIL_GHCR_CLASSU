@@ -75,6 +75,12 @@ RUN chmod +x /workspace/A1/init_or_check_nodes.sh && \
 COPY Wan2.1_Vace_a1.sh /workspace/A1/Wan2.1_Vace_a1.sh
 RUN chmod +x /workspace/A1/Wan2.1_Vace_a1.sh
 
+# SCAIL_down_a1.sh 스크립트 복사 및 실행 권한 설정
+COPY SCAIL_down_a1.sh /workspace/A1/SCAIL_down_a1.sh
+RUN chmod +x /workspace/A1/SCAIL_down_a1.sh
+
+
+
 # 볼륨 마운트
 VOLUME ["/workspace"]
 
